@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="Properties  Array.length   12var arr = [&amp;quot;apple&amp;quot;,&amp;quot;juice &amp;quot;];arr.length; // 2    Array.prototype   Array.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。   12345678if(!Array.proto">
+<meta name="description" content="Properties Array.length12var arr = [&amp;quot;apple&amp;quot;,&amp;quot;juice &amp;quot;];arr.length; // 2 Array.prototypeArray.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。  12345678if(!Array.prototype.first)">
 <meta name="keywords" content="javascript,Array,ES6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="你想要的javascript Array的东西都在这里">
 <meta property="og:url" content="http://yoursite.com/2017/10/19/你想要的javascript-Array的东西都在这里/index.html">
 <meta property="og:site_name" content="小蜗牛">
-<meta property="og:description" content="Properties  Array.length   12var arr = [&amp;quot;apple&amp;quot;,&amp;quot;juice &amp;quot;];arr.length; // 2    Array.prototype   Array.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。   12345678if(!Array.proto">
+<meta property="og:description" content="Properties Array.length12var arr = [&amp;quot;apple&amp;quot;,&amp;quot;juice &amp;quot;];arr.length; // 2 Array.prototypeArray.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。  12345678if(!Array.prototype.first)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-23T14:20:46.000Z">
+<meta property="og:updated_time" content="2017-10-23T14:25:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="你想要的javascript Array的东西都在这里">
-<meta name="twitter:description" content="Properties  Array.length   12var arr = [&amp;quot;apple&amp;quot;,&amp;quot;juice &amp;quot;];arr.length; // 2    Array.prototype   Array.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。   12345678if(!Array.proto">
+<meta name="twitter:description" content="Properties Array.length12var arr = [&amp;quot;apple&amp;quot;,&amp;quot;juice &amp;quot;];arr.length; // 2 Array.prototypeArray.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。  12345678if(!Array.prototype.first)">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -135,10 +135,10 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
+                        <li>菜单</li>
+                        <li>标签</li>
                         
-                        <li>Friends</li>
+                        <li>友情链接</li>
                         
                         
                     </ul>
@@ -241,7 +241,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap"><article id="post-你想要的javascript-Array的东西都在这里" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -287,194 +287,225 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="Properties"><a href="#Properties" class="headerlink" title="Properties "></a><strong>Properties </strong></h2><ul>
-<li><p><strong>Array.length</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var arr = [&quot;apple&quot;,&quot;juice &quot;];</div><div class="line">arr.length; // 2</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.prototype</strong></p>
-<p>  Array.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">if(!Array.prototype.first)&#123;</div><div class="line">	Array.prototype.first = function()&#123;</div><div class="line">		return this[0];</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var arr = [1,2,3];</div><div class="line">arr.first = 1;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a><strong>Methods</strong></h2><ul>
-<li><p><strong>Array.from(arrayLike, mapFn?)</strong></p>
-<p>  Array.from()会从array-like or iterable object中创建一个新的数组实例。<br>  mapFn: 可选，可调用数组中每一个元素</p>
-<blockquote>
-<p>array-like: 类数组<br>具有length和index的对象.       </p>
-<p>iterable object: 可迭代对象<br>可以循环获取对象里面值的对象，例如：Map和Set</p>
-</blockquote>
-<h3 id="从字符串中获取数组"><a href="#从字符串中获取数组" class="headerlink" title="从字符串中获取数组"></a>从字符串中获取数组</h3><p>  <code>Array.from(&quot;echo&quot;); //[&quot;e&quot;,&quot;c&quot;,&quot;h&quot;,&quot;o&quot;]</code></p>
-<blockquote>
-<p><strong>拓展</strong><br>  把字符串转成数组<br>  “echo”.split(“”);</p>
-</blockquote>
-<h3 id="从数组中拷贝数组"><a href="#从数组中拷贝数组" class="headerlink" title="从数组中拷贝数组"></a>从数组中拷贝数组</h3>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr = [1,2,3];</div><div class="line">var fromArr = Array.from(arr);</div><div class="line">arr; //[1,2,3]</div><div class="line">fromArr; //[1,2,3]</div></pre></td></tr></table></figure>
-<p>  再看：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var arr = [1,&#123;a: 1&#125;];</div><div class="line">var fromArr = Array.from(arr);</div><div class="line">fromArr[1].a = 2;</div><div class="line">arr; //[ 1, &#123; a: 2 &#125; ]</div><div class="line">fromArr; //[ 1, &#123; a: 2 &#125; ]</div></pre></td></tr></table></figure>
-<p>  发现了吗？  </p>
-<p>  Array.from()是从数组中浅拷贝一个数组出来。</p>
-<p>  想了解更多深拷贝和浅拷贝的东东？请狠狠的戳这里👇 </p>
-<p>  <a href="">前进吧，少年</a></p>
-<h3 id="从Set中获取一个数组"><a href="#从Set中获取一个数组" class="headerlink" title="从Set中获取一个数组"></a>从Set中获取一个数组</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">const set = new Set([1,2,2,3]);</div><div class="line">Array.from(set); //[1,2,3]</div></pre></td></tr></table></figure>
-<p>   Set数据结构介绍👇</p>
-<p>   <a href="http://es6.ruanyifeng.com/#docs/set-map" target="_blank" rel="external">在这里</a></p>
-<h3 id="从Map中获取一个数组"><a href="#从Map中获取一个数组" class="headerlink" title="从Map中获取一个数组"></a>从Map中获取一个数组</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var m = new Map([[1, 2], [2, 4], [4, 8]]);</div><div class="line">Array.from(m); // [[1, 2], [2, 4], [4, 8]]</div></pre></td></tr></table></figure>
-<p>   Map数据结构介绍👇</p>
-<p>   <a href="http://es6.ruanyifeng.com/?search=map&amp;x=0&amp;y=0#docs/set-map" target="_blank" rel="external">here</a></p>
-<h3 id="从类数组中获取一个数组"><a href="#从类数组中获取一个数组" class="headerlink" title="从类数组中获取一个数组"></a>从类数组中获取一个数组</h3><p>   <code>function f() { return Array.from(arguments); }  f(1,2); //[1,2]</code> </p>
-<blockquote>
-<p><strong>拓展</strong><br>把类数组转成数组<br>   <code>function f() { return [].slice.call(arguments);  
-   } 
-   f(1,2); //[1,2]</code></p>
-</blockquote>
-<h3 id="mapFn的应用"><a href="#mapFn的应用" class="headerlink" title="mapFn的应用"></a>mapFn的应用</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Array.from([1,2,3], x =&gt; x * x); //[1,4,9]</div><div class="line">Array.from(&#123;length: 5&#125;, (item, index) =&gt; index);</div><div class="line">//[0,1,2,3,4]</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.isArray()</strong></p>
-<p>  Array.isArray() 用于确定传递的值是否是一个 Array。</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Array.isArray([1,2,3]);  //true</div><div class="line">Array.isArray(&#123;a: 1&#125;);   //false</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.of()</strong></p>
-<p>  Array.of() 方法创建一个具有可变数量参数的新数组实例，而不考虑参数的数量或类型。</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Array.of(1,2,3); //[1,2,3]</div><div class="line">Array.of(undefined); //[undefined]</div><div class="line">Array.of(&#123;a: 2&#125;); //[&#123;a: 2&#125;]</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a><strong>prototype</strong></h2><ul>
-<li><p><strong>Array.prototype.concat()</strong></p>
-<p>  concat() 方法用于合并两个或多个数组。此方法不会更改现有数组，而是浅复制一个新数组。</p>
-<h3 id="连接两个数组"><a href="#连接两个数组" class="headerlink" title="连接两个数组"></a>连接两个数组</h3>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var alpha = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;];</div><div class="line">var numeric = [1, 2, 3];</div><div class="line">alpha.concat(numeric);</div><div class="line">// result in [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, 1, 2, 3]</div></pre></td></tr></table></figure>
-<h3 id="连接三个数组"><a href="#连接三个数组" class="headerlink" title="连接三个数组"></a>连接三个数组</h3>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var num1 = [1, 2, 3],</div><div class="line">num2 = [4, 5, 6],</div><div class="line">num3 = [7, 8, 9];</div><div class="line">var nums = num1.concat(num2, num3);</div><div class="line">console.log(nums); </div><div class="line">// results in [1, 2, 3, 4, 5, 6, 7, 8, 9]</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.prototype.copyWithin(target, start, end)</strong></p>
-<p>  copyWithin() 方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，而不修改其大小。</p>
-<p>  <strong>说明：</strong></p>
-<pre><code>1.把序列号为[start, end)的值拷贝到序列号为target的位置，而不改变原数组大小。
-2.start省略后默认为0，为负数时从尾部计算。
-3.end省略后为arrauy.length，为负数时从尾部计算。
-</code></pre><p>  <strong>示例：</strong>    </p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">[1, 2, 3, 4, 5].copyWithin(-2);</div><div class="line">// [1, 2, 3, 1, 2]</div><div class="line"></div><div class="line">[1, 2, 3, 4, 5].copyWithin(0, 3);</div><div class="line">// [4, 5, 3, 4, 5]</div><div class="line"></div><div class="line">[1, 2, 3, 4, 5].copyWithin(0, 3, 4);</div><div class="line">// [4, 2, 3, 4, 5]</div><div class="line"></div><div class="line">[1, 2, 3, 4, 5].copyWithin(-2, -3, -1);</div><div class="line">// [1, 2, 3, 3, 4]</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.prototype.every(fn)</strong></p>
-<p>  对一个数组里所有的值进行检测，全部通过返回true，否则返回false.</p>
-<p>  <strong>说明：</strong></p>
-<pre><code>fn(element, index, every)
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">let arr = [12, 14, 5, 39];</div><div class="line">	</div><div class="line">function testArr(item, index, array)&#123;</div><div class="line">    return item &gt; 10;</div><div class="line">&#125;</div><div class="line">	</div><div class="line">function testItem(item, index, array)&#123;</div><div class="line">    return item &gt; 3;</div><div class="line">&#125;</div><div class="line">	</div><div class="line">console.log( arr.every(testArr) ); //false</div><div class="line">console.log( arr.every(testItem) ); //true</div><div class="line">console.log( arr.every(x =&gt; x &gt; 1) ); //true</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.prototype.fill(value, strat? end?)</strong></p>
-<p>  <strong>说明：</strong></p>
-<pre><code>1.start可选，默认值为0.如果为负数，则从尾部开始。
-2.end可选，默认值为Array.length，则从尾部开始。
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">[1, 2, 3].fill(4);               // [4, 4, 4]</div><div class="line">[1, 2, 3].fill(4, 1);            // [1, 4, 4]</div><div class="line">[1, 2, 3].fill(4, 1, 2);         // [1, 4, 3]</div><div class="line">[1, 2, 3].fill(4, 1, 1);         // [1, 2, 3]</div><div class="line">[1, 2, 3].fill(4, -3, -2);       // [4, 2, 3]</div><div class="line">[1, 2, 3].fill(4, NaN, NaN);     // [1, 2, 3]</div><div class="line">Array(3).fill(4);                // [4, 4, 4]</div><div class="line">[].fill.call(&#123; length: 3 &#125;, 4);  // &#123;0: 4, 1: 4, 2: 4, length: 3&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.prototype.filter()</strong></p>
-<p>  <strong>入口：</strong>    </p>
-<pre><code>callback(item, index, array, thisArg?)
+        <h1 id="Properties"><a href="#Properties" class="headerlink" title="Properties "></a><strong>Properties </strong></h1><h2 id="Array-length"><a href="#Array-length" class="headerlink" title="Array.length"></a><strong>Array.length</strong></h2><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var arr = [&quot;apple&quot;,&quot;juice &quot;];</div><div class="line">arr.length; // 2</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype"><a href="#Array-prototype" class="headerlink" title="Array.prototype"></a><strong>Array.prototype</strong></h2><pre><code>Array.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。
 
-item: 当前元素
-index: 当前元素的序列号
-array: 当前作用的数组
-thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
-</code></pre><p>  <strong>出口：</strong></p>
-<pre><code>返回一个包含匹配元素的数组
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">const fruits = [&apos;apple&apos;, &apos;banana&apos;, &apos;grapes&apos;, &apos;mango&apos;, &apos;orange&apos;];</div><div class="line">const filterItems = (query) =&gt; &#123;</div><div class="line">  return fruits.filter((el) =&gt;</div><div class="line">    el.toLowerCase().indexOf(query.toLowerCase()) &gt; -1</div><div class="line">  );</div><div class="line">&#125;</div><div class="line">console.log(filterItems(&apos;ap&apos;)); // [&apos;apple&apos;, &apos;grapes&apos;]</div><div class="line">console.log(filterItems(&apos;an&apos;)); // [&apos;banana&apos;, &apos;mango&apos;, &apos;orange&apos;]</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.prototype.find()</strong></p>
-<p>  <strong>入口：</strong></p>
-<pre><code>callback(item, index, array, thisArg?)
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">if(!Array.prototype.first)&#123;</div><div class="line">	Array.prototype.first = function()&#123;</div><div class="line">		return this[0];</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var arr = [1,2,3];</div><div class="line">arr.first = 1;</div></pre></td></tr></table></figure>
+</code></pre><h1 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a><strong>Methods</strong></h1><h2 id="Array-from-arrayLike-mapFn"><a href="#Array-from-arrayLike-mapFn" class="headerlink" title="Array.from(arrayLike, mapFn?)"></a><strong>Array.from(arrayLike, mapFn?)</strong></h2><pre><code>Array.from()会从array-like or iterable object中创建一个新的数组实例。   
+mapFn: 可选，可调用数组中每一个元素
 
-item: 当前元素
-index: 当前元素的序列号
-array: 当前作用的数组
-thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
-</code></pre><p>  <strong>出口：</strong></p>
-<pre><code>放回第一个匹配到的元素，如果不存在，返回undefined.
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var inventory = [</div><div class="line">   &#123;name: &apos;apples&apos;, quantity: 2&#125;,</div><div class="line">   &#123;name: &apos;bananas&apos;, quantity: 0&#125;,</div><div class="line">    &#123;name: &apos;cherries&apos;, quantity: 5&#125;</div><div class="line">];</div><div class="line"></div><div class="line">function findCherries(fruit) &#123; </div><div class="line">    return fruit.name === &apos;cherries&apos;;</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.log(inventory.find(findCherries)); </div><div class="line">// &#123; name: &apos;cherries&apos;, quantity: 5 &#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.prototype.findIndex()</strong></p>
-<p>  <strong>入口：</strong></p>
-<pre><code>callback(item, index, array, thisArg?)
+&gt; array-like: 类数组    
+&gt; 具有length和index的对象.       
 
-item: 当前元素
-index: 当前元素的序列号
-array: 当前作用的数组
-thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
-</code></pre><p>  <strong>出口：</strong></p>
-<pre><code>放回第一个匹配到的元素的序列号，如果不存在，返回undefined.
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function isBigEnough(element) &#123;</div><div class="line">  return element &gt;= 15;</div><div class="line">&#125;</div><div class="line"></div><div class="line">[12, 5, 8, 130, 44].findIndex(isBigEnough); </div><div class="line">// index of 4th element in the Array is returned,</div><div class="line">// so this will result in &apos;3&apos;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p><strong>Array.prototype.forEach()</strong></p>
-<p>  <strong>入口：</strong></p>
-<pre><code>callback(item, index, array, thisArg?)
+&gt; iterable object: 可迭代对象
+&gt; 可以循环获取对象里面值的对象，例如：Map和Set
 
-item: 当前元素
-index: 当前元素的序列号
-array: 当前作用的数组
-thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
-</code></pre><p>  <strong>操作：</strong></p>
-<pre><code>对数组中每一个元素执行一次函数操作。
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">const arr = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;];</div><div class="line"></div><div class="line">arr.forEach(function(element) &#123;</div><div class="line">    console.log(element);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// a</div><div class="line">// b</div><div class="line">// c</div></pre></td></tr></table></figure>
-</li>
-<li><p><strong>Array.prototype.includes(searchItem, startIndex?)</strong></p>
-<p>  <strong>入口：</strong></p>
-<pre><code>searchItem: 需要搜索的目标元素
-startIndex: 开始的位置
-</code></pre><p>  <strong>出口：</strong></p>
-<pre><code>如果搜索到有目标元素，返回true，否则，返回false.
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3];</div><div class="line">a.includes(2); // true </div><div class="line">a.includes(4); // false</div></pre></td></tr></table></figure>
-</li>
-<li><p><strong>Array.prototype.indexOf()</strong>    </p>
-<p>  <strong>入口：</strong></p>
-<pre><code>searchItem: 需要搜索的目标元素
-startIndex？: 开始的位置,如果为负数，从后面开始搜索。
-</code></pre><p>  <strong>出口：</strong></p>
-<pre><code>如果搜索到有目标元素，返回该元素的序列号（如果匹配到多个，则返回第一个匹配元素的序列号），否则，返回-1.
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3];</div><div class="line">a.indexOf(2); // 1</div><div class="line">a.indexOf(4); // -1</div><div class="line">a.indexOf(2,1); // 1</div><div class="line">a.indexOf(2,11); // -1</div></pre></td></tr></table></figure>
-</li>
-<li><p><strong>Array.prototype.lastIndexOf()</strong>    </p>
-<p>  <strong>入口：</strong></p>
-<pre><code>searchItem: 需要搜索的目标元素
-startIndex？: 开始的位置,如果为负数，从后面开始搜索。
-</code></pre><p>  <strong>出口：</strong></p>
-<pre><code>如果搜索到有目标元素，返回该元素的序列号（如果匹配到多个，则返回最后一个匹配元素的序列号），否则，返回-1.
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3, 1];</div><div class="line">a.lastIndexOf(1); // 3</div><div class="line">a.lastIndexOf(1, -1); // -1</div></pre></td></tr></table></figure>
-</li>
-<li><p><strong>Array.prototype.join()</strong>    </p>
-<p>  <strong>入口：</strong></p>
-<pre><code>param？: 连接符。
-</code></pre><p>  <strong>出口：</strong></p>
-<pre><code>返回一个由连接符连接所有数组元素的字符串。如果数组长度为0，返回空字符串。
-</code></pre><p>  <strong>示例：</strong></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[1，2，3].join(); //&quot;1,2,3&quot;</div><div class="line">[1，2，3].join(&quot;&quot;); //&quot;123&quot;</div></pre></td></tr></table></figure>
-</li>
-</ul>
+### 从字符串中获取数组
 
+`Array.from(&quot;echo&quot;); //[&quot;e&quot;,&quot;c&quot;,&quot;h&quot;,&quot;o&quot;]`
+
+&gt; **拓展**  
+把字符串转成数组    
+&quot;echo&quot;.split(&quot;&quot;);
+
+### 从数组中拷贝数组
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr = [1,2,3];</div><div class="line">var fromArr = Array.from(arr);</div><div class="line">arr; //[1,2,3]</div><div class="line">fromArr; //[1,2,3]</div></pre></td></tr></table></figure>
+
+再看：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var arr = [1,&#123;a: 1&#125;];</div><div class="line">var fromArr = Array.from(arr);</div><div class="line">fromArr[1].a = 2;</div><div class="line">arr; //[ 1, &#123; a: 2 &#125; ]</div><div class="line">fromArr; //[ 1, &#123; a: 2 &#125; ]</div></pre></td></tr></table></figure>
+
+发现了吗？  
+
+Array.from()是从数组中浅拷贝一个数组出来。
+
+想了解更多深拷贝和浅拷贝的东东？请狠狠的戳这里👇 
+
+[前进吧，少年]()
+
+### 从Set中获取一个数组
+
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">const set = new Set([1,2,2,3]);</div><div class="line">Array.from(set); //[1,2,3]</div></pre></td></tr></table></figure>
+
+ Set数据结构介绍👇
+
+ [在这里](http://es6.ruanyifeng.com/#docs/set-map)
+
+### 从Map中获取一个数组
+
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var m = new Map([[1, 2], [2, 4], [4, 8]]);</div><div class="line">Array.from(m); // [[1, 2], [2, 4], [4, 8]]</div></pre></td></tr></table></figure>
+
+ Map数据结构介绍👇
+
+ [here](http://es6.ruanyifeng.com/?search=map&amp;x=0&amp;y=0#docs/set-map)
+
+###  从类数组中获取一个数组
+
+ `function f() { return Array.from(arguments); }  f(1,2); //[1,2]` 
+
+ &gt; **拓展**  
+ &gt; 把类数组转成数组       
+ `function f() { return [].slice.call(arguments);  
+ } 
+ f(1,2); //[1,2]`
+
+###  mapFn的应用
+
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Array.from([1,2,3], x =&gt; x * x); //[1,4,9]</div><div class="line">Array.from(&#123;length: 5&#125;, (item, index) =&gt; index);</div><div class="line">//[0,1,2,3,4]</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray()"></a><strong>Array.isArray()</strong></h2><pre><code>Array.isArray() 用于确定传递的值是否是一个 Array。
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Array.isArray([1,2,3]);  //true</div><div class="line">Array.isArray(&#123;a: 1&#125;);   //false</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of()"></a><strong>Array.of()</strong></h2><pre><code>Array.of() 方法创建一个具有可变数量参数的新数组实例，而不考虑参数的数量或类型。
+
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Array.of(1,2,3); //[1,2,3]</div><div class="line">Array.of(undefined); //[undefined]</div><div class="line">Array.of(&#123;a: 2&#125;); //[&#123;a: 2&#125;]</div></pre></td></tr></table></figure>
+</code></pre><h1 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a><strong>prototype</strong></h1><h2 id="Array-prototype-concat"><a href="#Array-prototype-concat" class="headerlink" title="Array.prototype.concat()"></a><strong>Array.prototype.concat()</strong></h2><pre><code>concat() 方法用于合并两个或多个数组。此方法不会更改现有数组，而是浅复制一个新数组。
+
+### 连接两个数组
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var alpha = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;];</div><div class="line">var numeric = [1, 2, 3];</div><div class="line">alpha.concat(numeric);</div><div class="line">// result in [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, 1, 2, 3]</div></pre></td></tr></table></figure>
+
+### 连接三个数组
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var num1 = [1, 2, 3],</div><div class="line">num2 = [4, 5, 6],</div><div class="line">num3 = [7, 8, 9];</div><div class="line">var nums = num1.concat(num2, num3);</div><div class="line">console.log(nums); </div><div class="line">// results in [1, 2, 3, 4, 5, 6, 7, 8, 9]</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-copyWithin-target-start-end"><a href="#Array-prototype-copyWithin-target-start-end" class="headerlink" title="Array.prototype.copyWithin(target, start, end)"></a><strong>Array.prototype.copyWithin(target, start, end)</strong></h2><pre><code>copyWithin() 方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，而不修改其大小。
+
+**说明：**
+
+    1.把序列号为[start, end)的值拷贝到序列号为target的位置，而不改变原数组大小。
+    2.start省略后默认为0，为负数时从尾部计算。
+    3.end省略后为arrauy.length，为负数时从尾部计算。
+
+**示例：**    
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">[1, 2, 3, 4, 5].copyWithin(-2);</div><div class="line">// [1, 2, 3, 1, 2]</div><div class="line"></div><div class="line">[1, 2, 3, 4, 5].copyWithin(0, 3);</div><div class="line">// [4, 5, 3, 4, 5]</div><div class="line"></div><div class="line">[1, 2, 3, 4, 5].copyWithin(0, 3, 4);</div><div class="line">// [4, 2, 3, 4, 5]</div><div class="line"></div><div class="line">[1, 2, 3, 4, 5].copyWithin(-2, -3, -1);</div><div class="line">// [1, 2, 3, 3, 4]</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-every-fn"><a href="#Array-prototype-every-fn" class="headerlink" title="Array.prototype.every(fn)"></a><strong>Array.prototype.every(fn)</strong></h2><pre><code>对一个数组里所有的值进行检测，全部通过返回true，否则返回false.
+
+**说明：**
+
+    fn(element, index, every)
+
+**示例：**
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">let arr = [12, 14, 5, 39];</div><div class="line">	</div><div class="line">function testArr(item, index, array)&#123;</div><div class="line">    return item &gt; 10;</div><div class="line">&#125;</div><div class="line">	</div><div class="line">function testItem(item, index, array)&#123;</div><div class="line">    return item &gt; 3;</div><div class="line">&#125;</div><div class="line">	</div><div class="line">console.log( arr.every(testArr) ); //false</div><div class="line">console.log( arr.every(testItem) ); //true</div><div class="line">console.log( arr.every(x =&gt; x &gt; 1) ); //true</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-fill-value-strat-end"><a href="#Array-prototype-fill-value-strat-end" class="headerlink" title="Array.prototype.fill(value, strat? end?)"></a><strong>Array.prototype.fill(value, strat? end?)</strong></h2><pre><code>**说明：**
+
+    1.start可选，默认值为0.如果为负数，则从尾部开始。
+    2.end可选，默认值为Array.length，则从尾部开始。
+
+**示例：**
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">[1, 2, 3].fill(4);               // [4, 4, 4]</div><div class="line">[1, 2, 3].fill(4, 1);            // [1, 4, 4]</div><div class="line">[1, 2, 3].fill(4, 1, 2);         // [1, 4, 3]</div><div class="line">[1, 2, 3].fill(4, 1, 1);         // [1, 2, 3]</div><div class="line">[1, 2, 3].fill(4, -3, -2);       // [4, 2, 3]</div><div class="line">[1, 2, 3].fill(4, NaN, NaN);     // [1, 2, 3]</div><div class="line">Array(3).fill(4);                // [4, 4, 4]</div><div class="line">[].fill.call(&#123; length: 3 &#125;, 4);  // &#123;0: 4, 1: 4, 2: 4, length: 3&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-filter"><a href="#Array-prototype-filter" class="headerlink" title="Array.prototype.filter()"></a><strong>Array.prototype.filter()</strong></h2><pre><code>**入口：**    
+
+    callback(item, index, array, thisArg?)
+
+    item: 当前元素
+    index: 当前元素的序列号
+    array: 当前作用的数组
+    thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
+
+**出口：**
+
+    返回一个包含匹配元素的数组
+
+**示例：**
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">const fruits = [&apos;apple&apos;, &apos;banana&apos;, &apos;grapes&apos;, &apos;mango&apos;, &apos;orange&apos;];</div><div class="line">const filterItems = (query) =&gt; &#123;</div><div class="line">  return fruits.filter((el) =&gt;</div><div class="line">    el.toLowerCase().indexOf(query.toLowerCase()) &gt; -1</div><div class="line">  );</div><div class="line">&#125;</div><div class="line">console.log(filterItems(&apos;ap&apos;)); // [&apos;apple&apos;, &apos;grapes&apos;]</div><div class="line">console.log(filterItems(&apos;an&apos;)); // [&apos;banana&apos;, &apos;mango&apos;, &apos;orange&apos;]</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-find"><a href="#Array-prototype-find" class="headerlink" title="Array.prototype.find()"></a><strong>Array.prototype.find()</strong></h2><pre><code>**入口：**
+
+    callback(item, index, array, thisArg?)
+
+    item: 当前元素
+    index: 当前元素的序列号
+    array: 当前作用的数组
+    thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
+
+**出口：**
+
+    放回第一个匹配到的元素，如果不存在，返回undefined.
+
+**示例：**
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var inventory = [</div><div class="line">   &#123;name: &apos;apples&apos;, quantity: 2&#125;,</div><div class="line">   &#123;name: &apos;bananas&apos;, quantity: 0&#125;,</div><div class="line">    &#123;name: &apos;cherries&apos;, quantity: 5&#125;</div><div class="line">];</div><div class="line"></div><div class="line">function findCherries(fruit) &#123; </div><div class="line">    return fruit.name === &apos;cherries&apos;;</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.log(inventory.find(findCherries)); </div><div class="line">// &#123; name: &apos;cherries&apos;, quantity: 5 &#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-findIndex"><a href="#Array-prototype-findIndex" class="headerlink" title="Array.prototype.findIndex()"></a><strong>Array.prototype.findIndex()</strong></h2><pre><code>**入口：**
+
+    callback(item, index, array, thisArg?)
+
+    item: 当前元素
+    index: 当前元素的序列号
+    array: 当前作用的数组
+    thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
+
+**出口：**
+
+    放回第一个匹配到的元素的序列号，如果不存在，返回undefined.
+
+**示例：**
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function isBigEnough(element) &#123;</div><div class="line">  return element &gt;= 15;</div><div class="line">&#125;</div><div class="line"></div><div class="line">[12, 5, 8, 130, 44].findIndex(isBigEnough); </div><div class="line">// index of 4th element in the Array is returned,</div><div class="line">// so this will result in &apos;3&apos;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-forEach"><a href="#Array-prototype-forEach" class="headerlink" title="Array.prototype.forEach()"></a><strong>Array.prototype.forEach()</strong></h2><pre><code>**入口：**
+
+    callback(item, index, array, thisArg?)
+
+    item: 当前元素
+    index: 当前元素的序列号
+    array: 当前作用的数组
+    thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
+
+**操作：**
+
+    对数组中每一个元素执行一次函数操作。
+
+**示例：**
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">const arr = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;];</div><div class="line"></div><div class="line">arr.forEach(function(element) &#123;</div><div class="line">    console.log(element);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// a</div><div class="line">// b</div><div class="line">// c</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-includes-searchItem-startIndex"><a href="#Array-prototype-includes-searchItem-startIndex" class="headerlink" title="Array.prototype.includes(searchItem, startIndex?)"></a><strong>Array.prototype.includes(searchItem, startIndex?)</strong></h2><pre><code>**入口：**
+
+    searchItem: 需要搜索的目标元素
+    startIndex: 开始的位置
+
+**出口：**
+
+    如果搜索到有目标元素，返回true，否则，返回false.
+
+**示例：**
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3];</div><div class="line">a.includes(2); // true </div><div class="line">a.includes(4); // false</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-indexOf"><a href="#Array-prototype-indexOf" class="headerlink" title="Array.prototype.indexOf()"></a><strong>Array.prototype.indexOf()</strong></h2><pre><code>**入口：**
+
+    searchItem: 需要搜索的目标元素
+    startIndex？: 开始的位置,如果为负数，从后面开始搜索。
+
+**出口：**
+
+    如果搜索到有目标元素，返回该元素的序列号（如果匹配到多个，则返回第一个匹配元素的序列号），否则，返回-1.
+
+**示例：**
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3];</div><div class="line">a.indexOf(2); // 1</div><div class="line">a.indexOf(4); // -1</div><div class="line">a.indexOf(2,1); // 1</div><div class="line">a.indexOf(2,11); // -1</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-lastIndexOf"><a href="#Array-prototype-lastIndexOf" class="headerlink" title="Array.prototype.lastIndexOf()"></a><strong>Array.prototype.lastIndexOf()</strong></h2><pre><code>**入口：**
+
+    searchItem: 需要搜索的目标元素
+    startIndex？: 开始的位置,如果为负数，从后面开始搜索。
+
+**出口：**
+
+    如果搜索到有目标元素，返回该元素的序列号（如果匹配到多个，则返回最后一个匹配元素的序列号），否则，返回-1.
+
+**示例：**
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3, 1];</div><div class="line">a.lastIndexOf(1); // 3</div><div class="line">a.lastIndexOf(1, -1); // -1</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array-prototype-join"><a href="#Array-prototype-join" class="headerlink" title="Array.prototype.join()"></a><strong>Array.prototype.join()</strong></h2><pre><code>**入口：**
+
+    param？: 连接符。
+
+**出口：**
+
+    返回一个由连接符连接所有数组元素的字符串。如果数组长度为0，返回空字符串。
+
+**示例：**
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[1，2，3].join(); //&quot;1,2,3&quot;</div><div class="line">[1，2，3].join(&quot;&quot;); //&quot;123&quot;</div></pre></td></tr></table></figure>
+</code></pre>
       
     </div>
     
@@ -482,17 +513,17 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
   
     
     <div class="copyright">
-        <p><span>Title:</span><a href="/2017/10/19/你想要的javascript-Array的东西都在这里/">你想要的javascript Array的东西都在这里</a></p>
-        <p><span>Author:</span><a href="/" title="Back to Homepage">echo</a></p>
-        <p><span>Created:</span>2017-10-19, 15:59:00</p>
-        <p><span>Updated:</span>2017-10-23, 22:20:46</p>
+        <p><span>本文标题:</span><a href="/2017/10/19/你想要的javascript-Array的东西都在这里/">你想要的javascript Array的东西都在这里</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">echo</a></p>
+        <p><span>发布时间:</span>2017-10-19, 15:59:00</p>
+        <p><span>最后更新:</span>2017-10-23, 22:25:38</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2017/10/19/你想要的javascript-Array的东西都在这里/" title="你想要的javascript Array的东西都在这里">http://yoursite.com/2017/10/19/你想要的javascript-Array的东西都在这里/</a>
-            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2017/10/19/你想要的javascript-Array的东西都在这里/　　By echo" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/10/19/你想要的javascript-Array的东西都在这里/" title="你想要的javascript Array的东西都在这里">http://yoursite.com/2017/10/19/你想要的javascript-Array的东西都在这里/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/10/19/你想要的javascript-Array的东西都在这里/　　作者: echo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -519,9 +550,9 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
+        <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Properties"><span class="toc-number">1.</span> <span class="toc-text">Properties </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Methods"><span class="toc-number">2.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#从字符串中获取数组"><span class="toc-number">2.1.</span> <span class="toc-text">从字符串中获取数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从数组中拷贝数组"><span class="toc-number">2.2.</span> <span class="toc-text">从数组中拷贝数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从Set中获取一个数组"><span class="toc-number">2.3.</span> <span class="toc-text">从Set中获取一个数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从Map中获取一个数组"><span class="toc-number">2.4.</span> <span class="toc-text">从Map中获取一个数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从类数组中获取一个数组"><span class="toc-number">2.5.</span> <span class="toc-text">从类数组中获取一个数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mapFn的应用"><span class="toc-number">2.6.</span> <span class="toc-text">mapFn的应用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#prototype"><span class="toc-number">3.</span> <span class="toc-text">prototype</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#连接两个数组"><span class="toc-number">3.1.</span> <span class="toc-text">连接两个数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连接三个数组"><span class="toc-number">3.2.</span> <span class="toc-text">连接三个数组</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Properties"><span class="toc-number">1.</span> <span class="toc-text">Properties </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-length"><span class="toc-number">1.1.</span> <span class="toc-text">Array.length</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype"><span class="toc-number">1.2.</span> <span class="toc-text">Array.prototype</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Methods"><span class="toc-number">2.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-from-arrayLike-mapFn"><span class="toc-number">2.1.</span> <span class="toc-text">Array.from(arrayLike, mapFn?)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-isArray"><span class="toc-number">2.2.</span> <span class="toc-text">Array.isArray()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-of"><span class="toc-number">2.3.</span> <span class="toc-text">Array.of()</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#prototype"><span class="toc-number">3.</span> <span class="toc-text">prototype</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-concat"><span class="toc-number">3.1.</span> <span class="toc-text">Array.prototype.concat()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-copyWithin-target-start-end"><span class="toc-number">3.2.</span> <span class="toc-text">Array.prototype.copyWithin(target, start, end)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-every-fn"><span class="toc-number">3.3.</span> <span class="toc-text">Array.prototype.every(fn)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-fill-value-strat-end"><span class="toc-number">3.4.</span> <span class="toc-text">Array.prototype.fill(value, strat? end?)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-filter"><span class="toc-number">3.5.</span> <span class="toc-text">Array.prototype.filter()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-find"><span class="toc-number">3.6.</span> <span class="toc-text">Array.prototype.find()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-findIndex"><span class="toc-number">3.7.</span> <span class="toc-text">Array.prototype.findIndex()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-forEach"><span class="toc-number">3.8.</span> <span class="toc-text">Array.prototype.forEach()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-includes-searchItem-startIndex"><span class="toc-number">3.9.</span> <span class="toc-text">Array.prototype.includes(searchItem, startIndex?)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-indexOf"><span class="toc-number">3.10.</span> <span class="toc-text">Array.prototype.indexOf()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-lastIndexOf"><span class="toc-number">3.11.</span> <span class="toc-text">Array.prototype.lastIndexOf()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-prototype-join"><span class="toc-number">3.12.</span> <span class="toc-text">Array.prototype.join()</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -535,10 +566,10 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
         }
     </style>
 
-    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
     <script>
-        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
     </script>
 
 
@@ -577,15 +608,15 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/10/19/js模块化/" title="Pre: js模块化">
+            <a href="/2017/10/19/js模块化/" title="上一篇: js模块化">
                 <i class="fa fa-angle-left"></i>
             </a>
         
 
-        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/10/14/hello-world/" title="Next: Hello World">
+            <a href="/2017/10/14/hello-world/" title="下一篇: Hello World">
                 <i class="fa fa-angle-right"></i>
             </a>
         
@@ -608,14 +639,14 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
                 2017 echo
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -624,7 +655,7 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -657,9 +688,9 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
