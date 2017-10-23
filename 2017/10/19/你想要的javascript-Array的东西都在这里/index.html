@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="小蜗牛">
 <meta property="og:description" content="Properties  Array.length   12var arr = [&amp;quot;apple&amp;quot;,&amp;quot;juice &amp;quot;];arr.length; // 2    Array.prototype   Array.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。   12345678if(!Array.proto">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-22T14:41:05.000Z">
+<meta property="og:updated_time" content="2017-10-23T14:20:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="你想要的javascript Array的东西都在这里">
 <meta name="twitter:description" content="Properties  Array.length   12var arr = [&amp;quot;apple&amp;quot;,&amp;quot;juice &amp;quot;];arr.length; // 2    Array.prototype   Array.prototype是Array的原型，你可以在上面添加新的方法，所有的Array实例都会继承新添加方法。   12345678if(!Array.proto">
@@ -135,10 +135,10 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜單</li>
-                        <li>標籤</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情鏈接</li>
+                        <li>Friends</li>
                         
                         
                     </ul>
@@ -176,7 +176,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Array/">Array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模块化/">模块化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计思想/">设计思想</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Array/">Array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/块状元素/">块状元素</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模块化/">模块化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/盒模型/">盒模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/行内元素/">行内元素</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计思想/">设计思想</a></li></ul>
                     </div>
                 </section>
                 
@@ -241,7 +241,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="標籤" friends="友情鏈接" about="關於我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-你想要的javascript-Array的东西都在这里" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -447,6 +447,32 @@ startIndex: 开始的位置
 </code></pre><p>  <strong>示例：</strong></p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3];</div><div class="line">a.includes(2); // true </div><div class="line">a.includes(4); // false</div></pre></td></tr></table></figure>
 </li>
+<li><p><strong>Array.prototype.indexOf()</strong>    </p>
+<p>  <strong>入口：</strong></p>
+<pre><code>searchItem: 需要搜索的目标元素
+startIndex？: 开始的位置,如果为负数，从后面开始搜索。
+</code></pre><p>  <strong>出口：</strong></p>
+<pre><code>如果搜索到有目标元素，返回该元素的序列号（如果匹配到多个，则返回第一个匹配元素的序列号），否则，返回-1.
+</code></pre><p>  <strong>示例：</strong></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3];</div><div class="line">a.indexOf(2); // 1</div><div class="line">a.indexOf(4); // -1</div><div class="line">a.indexOf(2,1); // 1</div><div class="line">a.indexOf(2,11); // -1</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Array.prototype.lastIndexOf()</strong>    </p>
+<p>  <strong>入口：</strong></p>
+<pre><code>searchItem: 需要搜索的目标元素
+startIndex？: 开始的位置,如果为负数，从后面开始搜索。
+</code></pre><p>  <strong>出口：</strong></p>
+<pre><code>如果搜索到有目标元素，返回该元素的序列号（如果匹配到多个，则返回最后一个匹配元素的序列号），否则，返回-1.
+</code></pre><p>  <strong>示例：</strong></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3, 1];</div><div class="line">a.lastIndexOf(1); // 3</div><div class="line">a.lastIndexOf(1, -1); // -1</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Array.prototype.join()</strong>    </p>
+<p>  <strong>入口：</strong></p>
+<pre><code>param？: 连接符。
+</code></pre><p>  <strong>出口：</strong></p>
+<pre><code>返回一个由连接符连接所有数组元素的字符串。如果数组长度为0，返回空字符串。
+</code></pre><p>  <strong>示例：</strong></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[1，2，3].join(); //&quot;1,2,3&quot;</div><div class="line">[1，2，3].join(&quot;&quot;); //&quot;123&quot;</div></pre></td></tr></table></figure>
+</li>
 </ul>
 
       
@@ -456,17 +482,17 @@ startIndex: 开始的位置
   
     
     <div class="copyright">
-        <p><span>本文標題:</span><a href="/2017/10/19/你想要的javascript-Array的东西都在这里/">你想要的javascript Array的东西都在这里</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主頁">echo</a></p>
-        <p><span>發布時間:</span>2017-10-19, 15:59:00</p>
-        <p><span>最後更新:</span>2017-10-22, 22:41:05</p>
+        <p><span>Title:</span><a href="/2017/10/19/你想要的javascript-Array的东西都在这里/">你想要的javascript Array的东西都在这里</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">echo</a></p>
+        <p><span>Created:</span>2017-10-19, 15:59:00</p>
+        <p><span>Updated:</span>2017-10-23, 22:20:46</p>
         <p>
-            <span>原始鏈接:</span><a class="post-url" href="/2017/10/19/你想要的javascript-Array的东西都在这里/" title="你想要的javascript Array的东西都在这里">http://yoursite.com/2017/10/19/你想要的javascript-Array的东西都在这里/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/10/19/你想要的javascript-Array的东西都在这里/　　作者: echo" title="點擊複製文章鏈接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2017/10/19/你想要的javascript-Array的东西都在这里/" title="你想要的javascript Array的东西都在这里">http://yoursite.com/2017/10/19/你想要的javascript-Array的东西都在这里/</a>
+            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2017/10/19/你想要的javascript-Array的东西都在这里/　　By echo" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"姓名標示-非商業性-相同方式分享 4.0 國際"</a> 轉載請保留原文鏈接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -493,7 +519,7 @@ startIndex: 开始的位置
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目錄</strong>
+        <strong class="toc-title">Contents</strong>
         
             <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Properties"><span class="toc-number">1.</span> <span class="toc-text">Properties </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Methods"><span class="toc-number">2.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#从字符串中获取数组"><span class="toc-number">2.1.</span> <span class="toc-text">从字符串中获取数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从数组中拷贝数组"><span class="toc-number">2.2.</span> <span class="toc-text">从数组中拷贝数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从Set中获取一个数组"><span class="toc-number">2.3.</span> <span class="toc-text">从Set中获取一个数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从Map中获取一个数组"><span class="toc-number">2.4.</span> <span class="toc-text">从Map中获取一个数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从类数组中获取一个数组"><span class="toc-number">2.5.</span> <span class="toc-text">从类数组中获取一个数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mapFn的应用"><span class="toc-number">2.6.</span> <span class="toc-text">mapFn的应用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#prototype"><span class="toc-number">3.</span> <span class="toc-text">prototype</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#连接两个数组"><span class="toc-number">3.1.</span> <span class="toc-text">连接两个数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连接三个数组"><span class="toc-number">3.2.</span> <span class="toc-text">连接三个数组</span></a></li></ol></li></ol>
         
@@ -509,10 +535,10 @@ startIndex: 开始的位置
         }
     </style>
 
-    <input type="button" id="tocButton" value="隱藏目錄"  title="點擊按鈕隱藏或者顯示文章目錄">
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
     <script>
-        yiliaConfig.toc = ["隱藏目錄", "顯示目錄", !!"false"];
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
 
 
@@ -551,21 +577,21 @@ startIndex: 开始的位置
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/10/19/js模块化/" title="上一篇: js模块化">
+            <a href="/2017/10/19/js模块化/" title="Pre: js模块化">
                 <i class="fa fa-angle-left"></i>
             </a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/10/14/hello-world/" title="下一篇: Hello World">
+            <a href="/2017/10/14/hello-world/" title="Next: Hello World">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/23/前后端分离VS前后端不分离/">前后端分离VS前后端不分离</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/19/js模块化/">js模块化</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/19/你想要的javascript-Array的东西都在这里/">你想要的javascript Array的东西都在这里</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/14/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/23/由一个小问题引发的思考/">由一个小问题引发的思考</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/23/前后端分离VS前后端不分离/">前后端分离VS前后端不分离</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/19/js模块化/">js模块化</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/19/你想要的javascript-Array的东西都在这里/">你想要的javascript Array的东西都在这里</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/14/hello-world/">Hello World</a></li></ul>
 
 
 
@@ -582,14 +608,14 @@ startIndex: 开始的位置
                 2017 echo
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、簡潔且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="簡而不減 Hexo 雙欄博客主題  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到訪數"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -598,7 +624,7 @@ startIndex: 开始的位置
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本頁閱讀量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -631,9 +657,9 @@ startIndex: 开始的位置
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回頂部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看評論"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="轉到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
