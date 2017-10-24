@@ -138,10 +138,10 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>菜單</li>
+                        <li>標籤</li>
                         
-                        <li>友情链接</li>
+                        <li>友情鏈接</li>
                         
                         
                     </ul>
@@ -244,7 +244,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="標籤" friends="友情鏈接" about="關於我"/>
 </nav>
       <div class="body-wrap">
   
@@ -580,27 +580,28 @@
  f(1,2); //[1,2]</code></p>
 </blockquote>
 <h3 id="mapFn的应用"><a href="#mapFn的应用" class="headerlink" title="mapFn的应用"></a>mapFn的应用</h3> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Array.from([1,2,3], x =&gt; x * x); //[1,4,9]</div><div class="line">Array.from(&#123;length: 5&#125;, (item, index) =&gt; index);</div><div class="line">//[0,1,2,3,4]</div></pre></td></tr></table></figure>
-<h2 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray()"></a><strong>Array.isArray()</strong></h2><p>Array.isArray() 用于确定传递的值是否是一个 Array。</p>
+<h2 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray"></a><strong>Array.isArray</strong></h2><p>Array.isArray() 用于确定传递的值是否是一个 Array。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Array.isArray([1,2,3]);  //true</div><div class="line">Array.isArray(&#123;a: 1&#125;);   //false</div></pre></td></tr></table></figure>
-<h2 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of()"></a><strong>Array.of()</strong></h2><p>Array.of() 方法创建一个具有可变数量参数的新数组实例，而不考虑参数的数量或类型。</p>
+<h2 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of"></a><strong>Array.of</strong></h2><p>Array.of() 方法创建一个具有可变数量参数的新数组实例，而不考虑参数的数量或类型。</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Array.of(1,2,3); //[1,2,3]</div><div class="line">Array.of(undefined); //[undefined]</div><div class="line">Array.of(&#123;a: 2&#125;); //[&#123;a: 2&#125;]</div></pre></td></tr></table></figure>
-<h1 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a><strong>prototype</strong></h1><h2 id="Array-prototype-concat"><a href="#Array-prototype-concat" class="headerlink" title="Array.prototype.concat()"></a><strong>Array.prototype.concat()</strong></h2><p>concat() 方法用于合并两个或多个数组。此方法不会更改现有数组，而是浅复制一个新数组。</p>
+<h1 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a><strong>prototype</strong></h1><h2 id="Array-prototype-concat"><a href="#Array-prototype-concat" class="headerlink" title="Array.prototype.concat"></a><strong>Array.prototype.concat</strong></h2><p>concat() 方法用于合并两个或多个数组。此方法不会更改现有数组，而是浅复制一个新数组。</p>
 <h3 id="连接两个数组"><a href="#连接两个数组" class="headerlink" title="连接两个数组"></a>连接两个数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var alpha = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;];</div><div class="line">var numeric = [1, 2, 3];</div><div class="line">alpha.concat(numeric);</div><div class="line">// result in [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, 1, 2, 3]</div></pre></td></tr></table></figure>
 <h3 id="连接三个数组"><a href="#连接三个数组" class="headerlink" title="连接三个数组"></a>连接三个数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var num1 = [1, 2, 3],</div><div class="line">num2 = [4, 5, 6],</div><div class="line">num3 = [7, 8, 9];</div><div class="line">var nums = num1.concat(num2, num3);</div><div class="line">console.log(nums); </div><div class="line">// results in [1, 2, 3, 4, 5, 6, 7, 8, 9]</div></pre></td></tr></table></figure>
-<h2 id="Array-prototype-copyWithin-target-start-end"><a href="#Array-prototype-copyWithin-target-start-end" class="headerlink" title="Array.prototype.copyWithin(target, start, end)"></a><strong>Array.prototype.copyWithin(target, start, end)</strong></h2><p>copyWithin() 方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，而不修改其大小。</p>
+<h2 id="Array-prototype-copyWithin"><a href="#Array-prototype-copyWithin" class="headerlink" title="Array.prototype.copyWithin"></a><strong>Array.prototype.copyWithin</strong></h2><p>copyWithin() 方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，而不修改其大小。</p>
 <p><strong>说明：</strong></p>
 <pre><code>1.把序列号为[start, end)的值拷贝到序列号为target的位置，而不改变原数组大小。
 2.start省略后默认为0，为负数时从尾部计算。
 3.end省略后为arrauy.length，为负数时从尾部计算。
 </code></pre><p><strong>示例：</strong>    </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">[1, 2, 3, 4, 5].copyWithin(-2);</div><div class="line">// [1, 2, 3, 1, 2]</div><div class="line">	</div><div class="line">[1, 2, 3, 4, 5].copyWithin(0, 3);</div><div class="line">// [4, 5, 3, 4, 5]</div><div class="line">	</div><div class="line">[1, 2, 3, 4, 5].copyWithin(0, 3, 4);</div><div class="line">// [4, 2, 3, 4, 5]</div><div class="line">	</div><div class="line">[1, 2, 3, 4, 5].copyWithin(-2, -3, -1);</div><div class="line">// [1, 2, 3, 3, 4]</div></pre></td></tr></table></figure>
-<h2 id="Array-prototype-every-fn"><a href="#Array-prototype-every-fn" class="headerlink" title="Array.prototype.every(fn)"></a><strong>Array.prototype.every(fn)</strong></h2><p>对一个数组里所有的值进行检测，全部通过返回true，否则返回false.</p>
+<h2 id="Array-prototype-every"><a href="#Array-prototype-every" class="headerlink" title="Array.prototype.every"></a><strong>Array.prototype.every</strong></h2><p>对一个数组里所有的值进行检测，全部通过返回true，否则返回false.</p>
 <p><strong>说明：</strong></p>
 <pre><code>fn(element, index, every)
 </code></pre><p><strong>示例：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">let arr = [12, 14, 5, 39];</div><div class="line">	</div><div class="line">function testArr(item, index, array)&#123;</div><div class="line">    return item &gt; 10;</div><div class="line">&#125;</div><div class="line">	</div><div class="line">function testItem(item, index, array)&#123;</div><div class="line">    return item &gt; 3;</div><div class="line">&#125;</div><div class="line">	</div><div class="line">console.log( arr.every(testArr) ); //false</div><div class="line">console.log( arr.every(testItem) ); //true</div><div class="line">console.log( arr.every(x =&gt; x &gt; 1) ); //true</div></pre></td></tr></table></figure></p>
-<h2 id="Array-prototype-fill-value-strat-end"><a href="#Array-prototype-fill-value-strat-end" class="headerlink" title="Array.prototype.fill(value, strat? end?)"></a><strong>Array.prototype.fill(value, strat? end?)</strong></h2><p><strong>说明：</strong></p>
-<pre><code>1.start可选，默认值为0.如果为负数，则从尾部开始。
-2.end可选，默认值为Array.length，则从尾部开始。
+<h2 id="Array-prototype-fill"><a href="#Array-prototype-fill" class="headerlink" title="Array.prototype.fill"></a><strong>Array.prototype.fill</strong></h2><p><strong>入口：</strong></p>
+<pre><code>value: 搜索的值。
+start可选，默认值为0.如果为负数，则从尾部开始。
+end可选，默认值为Array.length，则从尾部开始。
 </code></pre><p><strong>示例：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">[1, 2, 3].fill(4);               // [4, 4, 4]</div><div class="line">[1, 2, 3].fill(4, 1);            // [1, 4, 4]</div><div class="line">[1, 2, 3].fill(4, 1, 2);         // [1, 4, 3]</div><div class="line">[1, 2, 3].fill(4, 1, 1);         // [1, 2, 3]</div><div class="line">[1, 2, 3].fill(4, -3, -2);       // [4, 2, 3]</div><div class="line">[1, 2, 3].fill(4, NaN, NaN);     // [1, 2, 3]</div><div class="line">Array(3).fill(4);                // [4, 4, 4]</div><div class="line">[].fill.call(&#123; length: 3 &#125;, 4);  // &#123;0: 4, 1: 4, 2: 4, length: 3&#125;</div></pre></td></tr></table></figure>
 <h2 id="Array-prototype-filter"><a href="#Array-prototype-filter" class="headerlink" title="Array.prototype.filter()"></a><strong>Array.prototype.filter()</strong></h2><p><strong>入口：</strong>    </p>
@@ -614,7 +615,7 @@ thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
 <pre><code>返回一个包含匹配元素的数组
 </code></pre><p><strong>示例：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">const fruits = [&apos;apple&apos;, &apos;banana&apos;, &apos;grapes&apos;, &apos;mango&apos;, &apos;orange&apos;];</div><div class="line">const filterItems = (query) =&gt; &#123;</div><div class="line">  return fruits.filter((el) =&gt;</div><div class="line">    el.toLowerCase().indexOf(query.toLowerCase()) &gt; -1</div><div class="line">  );</div><div class="line">&#125;</div><div class="line">console.log(filterItems(&apos;ap&apos;)); // [&apos;apple&apos;, &apos;grapes&apos;]</div><div class="line">console.log(filterItems(&apos;an&apos;)); // [&apos;banana&apos;, &apos;mango&apos;, &apos;orange&apos;]</div></pre></td></tr></table></figure>
-<h2 id="Array-prototype-find"><a href="#Array-prototype-find" class="headerlink" title="Array.prototype.find()"></a><strong>Array.prototype.find()</strong></h2><p><strong>入口：</strong></p>
+<h2 id="Array-prototype-find"><a href="#Array-prototype-find" class="headerlink" title="Array.prototype.find"></a><strong>Array.prototype.find</strong></h2><p><strong>入口：</strong></p>
 <pre><code>callback(item, index, array, thisArg?)
 
 item: 当前元素
@@ -625,7 +626,7 @@ thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
 <pre><code>放回第一个匹配到的元素，如果不存在，返回undefined.
 </code></pre><p><strong>示例：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var inventory = [</div><div class="line">&#123;name: &apos;apples&apos;, quantity: 2&#125;,</div><div class="line">&#123;name: &apos;bananas&apos;, quantity: 0&#125;,</div><div class="line">    &#123;name: &apos;cherries&apos;, quantity: 5&#125;</div><div class="line">];</div><div class="line">	</div><div class="line">function findCherries(fruit) &#123; </div><div class="line">    return fruit.name === &apos;cherries&apos;;</div><div class="line">&#125;</div><div class="line">	</div><div class="line">console.log(inventory.find(findCherries)); </div><div class="line">// &#123; name: &apos;cherries&apos;, quantity: 5 &#125;</div></pre></td></tr></table></figure>
-<h2 id="Array-prototype-findIndex"><a href="#Array-prototype-findIndex" class="headerlink" title="Array.prototype.findIndex()"></a><strong>Array.prototype.findIndex()</strong></h2><p><strong>入口：</strong></p>
+<h2 id="Array-prototype-findIndex"><a href="#Array-prototype-findIndex" class="headerlink" title="Array.prototype.findIndex"></a><strong>Array.prototype.findIndex</strong></h2><p><strong>入口：</strong></p>
 <pre><code>callback(item, index, array, thisArg?)
 
 item: 当前元素
@@ -636,7 +637,7 @@ thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
 <pre><code>放回第一个匹配到的元素的序列号，如果不存在，返回undefined.
 </code></pre><p><strong>示例：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function isBigEnough(element) &#123;</div><div class="line">  return element &gt;= 15;</div><div class="line">&#125;</div><div class="line">	</div><div class="line">[12, 5, 8, 130, 44].findIndex(isBigEnough); </div><div class="line">// index of 4th element in the Array is returned,</div><div class="line">// so this will result in &apos;3&apos;</div></pre></td></tr></table></figure>
-<h2 id="Array-prototype-forEach"><a href="#Array-prototype-forEach" class="headerlink" title="Array.prototype.forEach()"></a><strong>Array.prototype.forEach()</strong></h2><p><strong>入口：</strong></p>
+<h2 id="Array-prototype-forEach"><a href="#Array-prototype-forEach" class="headerlink" title="Array.prototype.forEach"></a><strong>Array.prototype.forEach</strong></h2><p><strong>入口：</strong></p>
 <pre><code>callback(item, index, array, thisArg?)
 
 item: 当前元素
@@ -647,32 +648,54 @@ thisArg: 回掉函数中的this指向，如果未设置，则指向undefined
 <pre><code>对数组中每一个元素执行一次函数操作。
 </code></pre><p><strong>示例：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">const arr = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;];</div><div class="line">	</div><div class="line">arr.forEach(function(element) &#123;</div><div class="line">    console.log(element);</div><div class="line">&#125;);</div><div class="line">	</div><div class="line">// a</div><div class="line">// b</div><div class="line">// c</div></pre></td></tr></table></figure>
-<h2 id="Array-prototype-includes-searchItem-startIndex"><a href="#Array-prototype-includes-searchItem-startIndex" class="headerlink" title="Array.prototype.includes(searchItem, startIndex?)"></a><strong>Array.prototype.includes(searchItem, startIndex?)</strong></h2><p><strong>入口：</strong></p>
+<h2 id="Array-prototype-includes"><a href="#Array-prototype-includes" class="headerlink" title="Array.prototype.includes"></a><strong>Array.prototype.includes</strong></h2><p><strong>入口：</strong></p>
 <pre><code>searchItem: 需要搜索的目标元素
 startIndex: 开始的位置
 </code></pre><p><strong>出口：</strong></p>
 <pre><code>如果搜索到有目标元素，返回true，否则，返回false.
 </code></pre><p><strong>示例：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3];</div><div class="line">a.includes(2); // true </div><div class="line">a.includes(4); // false</div></pre></td></tr></table></figure></p>
-<h2 id="Array-prototype-indexOf"><a href="#Array-prototype-indexOf" class="headerlink" title="Array.prototype.indexOf()"></a><strong>Array.prototype.indexOf()</strong></h2><p><strong>入口：</strong></p>
+<h2 id="Array-prototype-indexOf"><a href="#Array-prototype-indexOf" class="headerlink" title="Array.prototype.indexOf"></a><strong>Array.prototype.indexOf</strong></h2><p><strong>入口：</strong></p>
 <pre><code>searchItem: 需要搜索的目标元素
 startIndex？: 开始的位置,如果为负数，从后面开始搜索。
 </code></pre><p><strong>出口：</strong></p>
 <pre><code>如果搜索到有目标元素，返回该元素的序列号（如果匹配到多个，则返回第一个匹配元素的序列号），否则，返回-1.
 </code></pre><p><strong>示例：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3];</div><div class="line">a.indexOf(2); // 1</div><div class="line">a.indexOf(4); // -1</div><div class="line">a.indexOf(2,1); // 1</div><div class="line">a.indexOf(2,11); // -1</div></pre></td></tr></table></figure>
-<h2 id="Array-prototype-lastIndexOf"><a href="#Array-prototype-lastIndexOf" class="headerlink" title="Array.prototype.lastIndexOf()"></a><strong>Array.prototype.lastIndexOf()</strong></h2><p><strong>入口：</strong></p>
+<h2 id="Array-prototype-lastIndexOf"><a href="#Array-prototype-lastIndexOf" class="headerlink" title="Array.prototype.lastIndexOf"></a><strong>Array.prototype.lastIndexOf</strong></h2><p><strong>入口：</strong></p>
 <pre><code>searchItem: 需要搜索的目标元素
 startIndex？: 开始的位置,如果为负数，从后面开始搜索。
 </code></pre><p><strong>出口：</strong></p>
 <pre><code>如果搜索到有目标元素，返回该元素的序列号（如果匹配到多个，则返回最后一个匹配元素的序列号），否则，返回-1.
 </code></pre><p><strong>示例：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a = [1, 2, 3, 1];</div><div class="line">a.lastIndexOf(1); // 3</div><div class="line">a.lastIndexOf(1, -1); // -1</div></pre></td></tr></table></figure>
-<h2 id="Array-prototype-join"><a href="#Array-prototype-join" class="headerlink" title="Array.prototype.join()"></a><strong>Array.prototype.join()</strong></h2><p><strong>入口：</strong></p>
+<h2 id="Array-prototype-join"><a href="#Array-prototype-join" class="headerlink" title="Array.prototype.join"></a><strong>Array.prototype.join</strong></h2><p><strong>入口：</strong></p>
 <pre><code>param？: 连接符。
 </code></pre><p><strong>出口：</strong></p>
 <pre><code>返回一个由连接符连接所有数组元素的字符串。如果数组长度为0，返回空字符串。
 </code></pre><p><strong>示例：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[1，2，3].join(); //&quot;1,2,3&quot;</div><div class="line">[1，2，3].join(&quot;&quot;); //&quot;123&quot;</div></pre></td></tr></table></figure>
+<h2 id="Array-prototype-push"><a href="#Array-prototype-push" class="headerlink" title="Array.prototype.push"></a><strong>Array.prototype.push</strong></h2><p><strong>描述：</strong></p>
+<p>给一个数组最后插入一个或n个元素，并返回新数组的长度。</p>
+<p><strong>入口：</strong></p>
+<pre><code>elementN: 插入的元素。
+</code></pre><p><strong>出口：</strong></p>
+<pre><code>返回新数组的长度。
+</code></pre><p><strong>示例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[1，2，3].push(4); //4</div><div class="line">[1，2，3].push(&quot;a&quot;,&quot;b&quot;); //5</div><div class="line">```	</div><div class="line">### 连接两个数组</div></pre></td></tr></table></figure>
+<p>let arr1 = [4,5,6],<br>    arr2 = [1,2,3];<br>let arr = Array.prototype.push.apply(arr1,arr2);<br>console.log(arr); //6<br>console.log(arr1); //[ 4, 5, 6, 1, 2, 3 ]<br>console.log(arr2); //[ 1, 2, 3 ]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">## **Array.prototype.pop**	</div><div class="line"></div><div class="line">**描述：**</div><div class="line"></div><div class="line">从一个数组中移除最后一个元素，并返回该元素，该方法会改变数组的长度</div><div class="line"></div><div class="line">**入口：**</div><div class="line">	</div><div class="line">	无。</div><div class="line">		</div><div class="line">**出口：**</div><div class="line">	</div><div class="line">	返回被移除的元素。</div><div class="line">	</div><div class="line">**示例：**</div></pre></td></tr></table></figure></p>
+<p>let arr3 = [1,2,3];<br>console.log(arr3.pop());//3<br>console.log(arr3);//[1,2]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">## **Array.prototype.unshift**	</div><div class="line"></div><div class="line">**描述：**</div><div class="line"></div><div class="line">给一个数组最开始插入一个或n个元素，并返回新数组的长度。</div><div class="line"></div><div class="line">**入口：**</div><div class="line">	</div><div class="line">	elementN: 插入的元素。</div><div class="line">		</div><div class="line">**出口：**</div><div class="line">	</div><div class="line">	返回新数组的长度。</div><div class="line">	</div><div class="line">**示例：**</div></pre></td></tr></table></figure></p>
+<p>[1，2，3].unshift(4); //4<br>[1，2，3].unshift(“a”,”b”); //5<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">### 连接两个数组</div></pre></td></tr></table></figure></p>
+<p>let arr1 = [4,5,6],<br>    arr2 = [1,2,3];<br>let arr = Array.prototype.unshift.apply(arr1,arr2);<br>console.log(arr); //6<br>console.log(arr1); //[ 1, 2, 3 ,4, 5, 6]<br>console.log(arr2); //[ 1, 2, 3 ]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">## **Array.prototype.shift**</div><div class="line"></div><div class="line">**描述：**</div><div class="line"></div><div class="line">从一个数组中移除第一个元素，并返回该元素，该方法会改变数组的长度</div><div class="line"></div><div class="line">**入口：**</div><div class="line">	</div><div class="line">	无。</div><div class="line">		</div><div class="line">**出口：**</div><div class="line">	</div><div class="line">	返回被移除的元素。</div><div class="line">	</div><div class="line">**示例：**</div></pre></td></tr></table></figure></p>
+<p>let arr3 = [1,2,3];<br>console.log(arr3.shift());//1<br>console.log(arr3);//[2,3]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## **Array.prototype.map**</div><div class="line"></div><div class="line">**描述：**</div><div class="line"></div><div class="line">该方法会对数组内的每一个元素进行回掉处理，处理的返回值组成该方法的返回新数组。</div><div class="line"></div><div class="line">**入口：**</div><div class="line">	</div><div class="line">	callback</div><div class="line">		elem: 每一项元素</div><div class="line">		index: 每一项元素的序列号</div><div class="line">		array: 作用数组</div><div class="line">	thisArg?: 数组内this指向。</div><div class="line">		</div><div class="line">**出口：**</div><div class="line">	</div><div class="line">	返回一个新数组。</div><div class="line">	</div><div class="line">**示例：**</div></pre></td></tr></table></figure></p>
+<p>let num = [1,2,3];<br>num.map(Math.sqrt);//[1,4,9]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">## **Array.prototype.reduce**</div><div class="line"></div><div class="line">**描述：**</div><div class="line"></div><div class="line">该方法会对数组内的每一个元素进行累加并返回最终的值。</div><div class="line"></div><div class="line">**入口：**</div><div class="line">	</div><div class="line">	callback</div><div class="line">		accumulator: 累加器。当未指定初始值时，该值为数组第一个元素的值。</div><div class="line">		currentValue: 当前值。如果累加器为第一个值，当前值为第二个，否则为第一个值。</div><div class="line">		currentIndex: 当前值的序列号。</div><div class="line">		array: 作用数组</div><div class="line">	initialValue: 初始值。</div><div class="line">		</div><div class="line">**出口：**</div><div class="line">	</div><div class="line">	返回计算结果。</div><div class="line">	</div><div class="line">**示例：**</div></pre></td></tr></table></figure></p>
+<p>let num = [1,2,3];<br>num.reduce((num, a) =&gt; num + a); //6<br>num.reduce((num, a) =&gt; num + a, 4);//10<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">## **Array.prototype.reduceRight**</div><div class="line"></div><div class="line">同上，从右向左累加。</div><div class="line"></div><div class="line">## **Array.prototype.reverse**</div><div class="line"></div><div class="line">**描述：**</div><div class="line"></div><div class="line">该方法会对数组内的每一个元素进行反转，并返回反转后的数组。</div><div class="line"></div><div class="line">**入口：**</div><div class="line">	</div><div class="line">	无。</div><div class="line">		</div><div class="line">**出口：**</div><div class="line">	</div><div class="line">	返回反转后的数组。</div><div class="line">	</div><div class="line">**示例：**</div></pre></td></tr></table></figure></p>
+<p>let num = [1,2,3];<br>num.reverse(); //[3,2,1]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">## **Array.prototype.some**</div><div class="line"></div><div class="line">**描述：**</div><div class="line"></div><div class="line">该方法会对数组内的每一个元素进行检测，如果至少有一个值满足要求，返回true，否则，返回false。</div><div class="line"></div><div class="line">**入口：**</div><div class="line">	</div><div class="line">	callback</div><div class="line">		currentValue: 当前值。</div><div class="line">		currentIndex: 当前值的序列号。</div><div class="line">		array: 作用数组</div><div class="line">	thisArg?: 数组内的this指向。</div><div class="line">		</div><div class="line">**出口：**</div><div class="line">	</div><div class="line">	返回Boolean。</div><div class="line">	</div><div class="line">**示例：**</div></pre></td></tr></table></figure></p>
+<p>let num = [1,2,3];<br>num.some(val =&gt; val &gt; 2); //true<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">## **Array.prototype.sort**</div><div class="line"></div><div class="line">**描述：**</div><div class="line"></div><div class="line">该方法会对数组内的元素进行排序，默认是按照元素的Uncode进行排序。</div><div class="line"></div><div class="line">**入口：**</div><div class="line">	</div><div class="line">	params: 对比参数</div><div class="line">		</div><div class="line">**出口：**</div><div class="line">	</div><div class="line">	返回排列后的数组。</div><div class="line">	</div><div class="line">**示例：**</div></pre></td></tr></table></figure></p>
+<p>let num = [1,2,3];<br>num.sort(); //[1,2,3]<br>num.sort((a, b) =&gt; b - a); //[3,2,1]<br>```</p>
+<h2 id="Array-prototype-splice"><a href="#Array-prototype-splice" class="headerlink" title="Array.prototype.splice"></a><strong>Array.prototype.splice</strong></h2><p><strong>描述：</strong></p>
+<p>该方法会可完成数组的增，删，改。返回包含删除元素的数组。</p>
+<h2 id="Array-prototype-toString"><a href="#Array-prototype-toString" class="headerlink" title="Array.prototype.toString"></a><strong>Array.prototype.toString</strong></h2><p><strong>描述：</strong></p>
+<p>该方法会对数组内每一个元素调用toString()，然后调用join(‘,’)拼成字符串。</p>
 
       
     </div>
@@ -781,14 +804,14 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
                 2017 echo
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、簡潔且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="簡而不減 Hexo 雙欄博客主題  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="本站到訪數"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -797,7 +820,7 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="本頁閱讀量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -830,9 +853,9 @@ startIndex？: 开始的位置,如果为负数，从后面开始搜索。
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="返回頂部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看評論"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="轉到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
