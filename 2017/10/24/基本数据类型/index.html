@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="echo" />
+
+
+
+<meta name="description" content="标识符标识符就是变量、对象、属性的名字。 标识符规范 第一个字符必须是字母、下划线或美元符$ 其他字符可以是字母、数字、下划线或美元符$ 不能把关键字、保留字、true、false、null、Infinity、NaN、Undefined用做标识符  数据类型 数字（Number）：整数和小数 字符串（String）:  字符组成的文本 布尔值（Boolean）: true和false undefi">
+<meta name="keywords" content="Javascript,数据类型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基本数据类型">
+<meta property="og:url" content="http://yoursite.com/2017/10/24/基本数据类型/index.html">
+<meta property="og:site_name" content="小蜗牛">
+<meta property="og:description" content="标识符标识符就是变量、对象、属性的名字。 标识符规范 第一个字符必须是字母、下划线或美元符$ 其他字符可以是字母、数字、下划线或美元符$ 不能把关键字、保留字、true、false、null、Infinity、NaN、Undefined用做标识符  数据类型 数字（Number）：整数和小数 字符串（String）:  字符组成的文本 布尔值（Boolean）: true和false undefi">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-10-24T04:27:36.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基本数据类型">
+<meta name="twitter:description" content="标识符标识符就是变量、对象、属性的名字。 标识符规范 第一个字符必须是字母、下划线或美元符$ 其他字符可以是字母、数字、下划线或美元符$ 不能把关键字、保留字、true、false、null、Infinity、NaN、Undefined用做标识符  数据类型 数字（Number）：整数和小数 字符串（String）:  字符组成的文本 布尔值（Boolean）: true和false undefi">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="小蜗牛" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>基本数据类型 | 小蜗牛</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: false
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">echo</a></h1>
+        </hgroup>
+
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/prettyEcho" title="GitHub"></a>
+                            
+                                <a class="fa 简书" href="http://www.jianshu.com/u/c9eae1a4377f" title="简书"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Array/">Array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/">Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/babel/">babel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/getter/">getter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/new/">new</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setter/">setter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/">this</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webstorm/">webstorm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/上下文/">上下文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/内存空间/">内存空间</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原型/">原型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原型链/">原型链</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/变量对象/">变量对象</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/块状元素/">块状元素</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型/">数据类型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模块化/">模块化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/活动对象/">活动对象</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/盒模型/">盒模型</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/行内元素/">行内元素</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计思想/">设计思想</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">echo</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">echo</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/prettyEcho" title="GitHub"></a>
+                            
+                                <a class="fa 简书" target="_blank" href="http://www.jianshu.com/u/c9eae1a4377f" title="简书"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-基本数据类型" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/10/24/基本数据类型/" class="article-date">
+      <time datetime="2017-10-24T04:20:00.000Z" itemprop="datePublished">2017-10-24</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      基本数据类型
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/">Javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据类型/">数据类型</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><p>标识符就是变量、对象、属性的名字。</p>
+<h3 id="标识符规范"><a href="#标识符规范" class="headerlink" title="标识符规范"></a>标识符规范</h3><ul>
+<li>第一个字符必须是字母、下划线或美元符$</li>
+<li>其他字符可以是字母、数字、下划线或美元符$</li>
+<li>不能把关键字、保留字、true、false、null、Infinity、NaN、Undefined用做标识符</li>
+</ul>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><ul>
+<li>数字（Number）：整数和小数</li>
+<li>字符串（String）:  字符组成的文本</li>
+<li>布尔值（Boolean）: true和false</li>
+<li>undefined ： 表示“未定义”或不存在，即由于目前没有定义，所以此处暂时没有任何值</li>
+<li>null ：表示无值，即此处的值就是“无”的状态。</li>
+<li>对象（Object）: 各种值的集合</li>
+<li>Symbol ：</li>
+</ul>
+<blockquote>
+<p>通常，我们将数值、字符串、布尔值称为原始类型（primitive type）的值，即它们是最基本的数据类型，不能再细分了。而将对象称为合成类型（complex type）的值，因为一个对象往往是多个原始类型的值的合成，可以看作是一个存放各种值的容器。至于undefined和null，一般将它们看成两个特殊值。</p>
+</blockquote>
+<p><em>对象分为：基本对象({})、数组、函数</em><br><strong>JS对象可分为狭义对象（{}）、广义对象（JS将一切都视为对象）</strong></p>
+<h3 id="判断类型"><a href="#判断类型" class="headerlink" title="判断类型"></a>判断类型</h3><p>判断到底是什么类型，有三种方法：</p>
+<ul>
+<li>typeof运算符</li>
+<li>instanceof运算符</li>
+<li>Object.prototype.toString方法</li>
+</ul>
+<ol>
+<li>typeof运算符</li>
+</ol>
+<ul>
+<li><p>原始类型<br>字符串、数字、布尔值分别返回string、number、boolean<br><code>typeof 123; // number</code><br><code>typeof &#39;123&#39;; // string</code><br><code>typeof true;  // boolean</code></p>
+</li>
+<li><p>对象</p>
+<p>函数、基本对象、数组分别返回 function、object、object<br><code>typeof function(){}; // function</code><br><code>typeof {};  // object</code><br><code>typeof [];  // object</code></p>
+</li>
+<li><p>undefinded</p>
+<p><code>typeof undefined; // undefined</code></p>
+<p><strong>可用于检测一个未定义的变量而不报错</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&gt;v</div><div class="line">// ReferenceError: v is not defined</div><div class="line">typeof v</div><div class="line">// &quot;undefined&quot;</div><div class="line"></div><div class="line">&gt;// 错误的写法</div><div class="line">if (v) &#123;</div><div class="line">  // ...</div><div class="line">&#125;</div><div class="line">// ReferenceError: v is not defined</div><div class="line">// 正确的写法</div><div class="line">if (typeof v === &quot;undefined&quot;) &#123;</div><div class="line">  // ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>null</p>
+<p><code>typeof null; // object</code></p>
+</li>
+<li><p>window<br>在浏览器环境下： <code>typeof window; // object</code><br>在其他环境下： <code>typeof window;  // undefined</code></p>
+</li>
+</ul>
+<h3 id="instanceof-运算符"><a href="#instanceof-运算符" class="headerlink" title="instanceof 运算符"></a>instanceof 运算符</h3><p>后续待写</p>
+<h3 id="Object-prototype-toString"><a href="#Object-prototype-toString" class="headerlink" title="Object.prototype.toString"></a>Object.prototype.toString</h3><p>后续待写</p>
+<h3 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h3><p>undefined类型的值就一个：undefined。表示还未定义。</p>
+<ul>
+<li>应用场景</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&gt;// 变量声明了，但没有赋值</div><div class="line">var i;</div><div class="line">i // undefined</div><div class="line">// 调用函数时，应该提供的参数没有提供，该参数等于undefined</div><div class="line">function f(x) &#123;</div><div class="line">  return x;</div><div class="line">&#125;</div><div class="line">f() // undefined</div><div class="line">// 对象没有赋值的属性</div><div class="line">var  o = new Object();</div><div class="line">o.p // undefined</div><div class="line">// 函数没有返回值时，默认返回undefined</div><div class="line">function f() &#123;&#125;</div><div class="line">f() // undefined</div></pre></td></tr></table></figure>
+<ul>
+<li>转化为数字类型</li>
+</ul>
+<p><code>Number(undefined); // NaN</code></p>
+<h3 id="null"><a href="#null" class="headerlink" title="null"></a>null</h3><p>null类型的值也就一个：null。表示一个空对象指针，也代表一中“无”的状态，将来可能被赋予任何值。</p>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><blockquote>
+<p>//定义准备保存对象的变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var obj = null;</div><div class="line">obj = [1];</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="转化为数字类型"><a href="#转化为数字类型" class="headerlink" title="转化为数字类型"></a>转化为数字类型</h3><p><code>Number(null); // 0</code></p>
+<h3 id="null和undefined是否相等"><a href="#null和undefined是否相等" class="headerlink" title="null和undefined是否相等"></a>null和undefined是否相等</h3><p><code>null == undefined; // true</code><br><code>null === undefined; // false</code></p>
+<h3 id="boolean"><a href="#boolean" class="headerlink" title="boolean"></a>boolean</h3><p>boolean有两种状态：真(true)、假(false)。严格区分大小写。<br>如果JavaScript预期某个位置应该是布尔值，会将该位置上现有的值自动转为布尔值。转换规则是除了下面六个值被转为false，其他值都视为true。</p>
+<ul>
+<li>undefined </li>
+<li>null </li>
+<li>0</li>
+<li>NaN</li>
+<li>false</li>
+<li>‘ ‘ 和 “ “</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/10/24/基本数据类型/">基本数据类型</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">echo</a></p>
+        <p><span>发布时间:</span>2017-10-24, 12:20:00</p>
+        <p><span>最后更新:</span>2017-10-24, 12:27:36</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/10/24/基本数据类型/" title="基本数据类型">http://yoursite.com/2017/10/24/基本数据类型/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/10/24/基本数据类型/　　作者: echo" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/10/24/内存空间和上下文/">
+                    内存空间和上下文
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#标识符"><span class="toc-number">1.</span> <span class="toc-text">标识符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标识符规范"><span class="toc-number">2.</span> <span class="toc-text">标识符规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型"><span class="toc-number">3.</span> <span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#判断类型"><span class="toc-number">4.</span> <span class="toc-text">判断类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#instanceof-运算符"><span class="toc-number">5.</span> <span class="toc-text">instanceof 运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Object-prototype-toString"><span class="toc-number">6.</span> <span class="toc-text">Object.prototype.toString</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">7.</span> <span class="toc-text">undefined</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">8.</span> <span class="toc-text">null</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#应用场景"><span class="toc-number">9.</span> <span class="toc-text">应用场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转化为数字类型"><span class="toc-number">10.</span> <span class="toc-text">转化为数字类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null和undefined是否相等"><span class="toc-number">11.</span> <span class="toc-text">null和undefined是否相等</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#boolean"><span class="toc-number">12.</span> <span class="toc-text">boolean</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"基本数据类型　| 小蜗牛　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/10/24/内存空间和上下文/" title="下一篇: 内存空间和上下文">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/24/基本数据类型/">基本数据类型</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/24/内存空间和上下文/">内存空间和上下文</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/24/getter-and-setter/">getter and setter</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/24/this指向问题/">this指向问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/24/说说new/">说说new</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/24/JS原型的理解过程/">JS原型的理解过程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/24/DOM基础/">DOM基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/23/由一个小问题引发的思考/">由一个小问题引发的思考</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/23/前后端分离VS前后端不分离/">前后端分离VS前后端不分离</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/19/js模块化/">js模块化</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/19/你想要的javascript-Array的东西都在这里/">你想要的javascript Array的东西都在这里</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/27/变量对象和活动对象/">变量对象和活动对象</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/24/webstorm配置支持es6和babel/">webstorm配置支持es6和babel</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/12/省略的样式属性/">省略的样式属性</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2017 echo
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+    <script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
